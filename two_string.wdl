@@ -28,6 +28,6 @@ task concat_echo {
   }
 
   runtime {
-    docker: "639879951631.dkr.ecr.us-west-2.amazonaws.com/aws_wf_testing:latest"
+    docker: "ubuntu:latest"
   }
 }
