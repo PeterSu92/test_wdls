@@ -10,7 +10,8 @@ workflow hello_concat_workflow {
   call concat_echo {
     input:
       first = first,
-      second = second
+      second = second,
+      docker_image = docker_image
   }
 }
 
