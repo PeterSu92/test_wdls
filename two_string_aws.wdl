@@ -4,6 +4,7 @@ workflow hello_concat_workflow {
   input {
     String first
     String second
+    String docker_image = "535002863113.dkr.ecr.us-east-1.amazonaws.com/yp/ubuntu:latest"
   }
 
   call concat_echo {
@@ -28,6 +29,6 @@ task concat_echo {
   }
 
   runtime {
-    docker: "535002863113.dkr.ecr.us-east-1.amazonaws.com/yp/ubuntu:latest"
+    docker: docker_image
   }
 }
