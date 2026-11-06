@@ -18,6 +18,7 @@ task concat_echo {
   input {
     String first
     String second
+    String docker_image
   }
 
   command {
